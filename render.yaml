@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: splitwise-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://postgres.fjoeswwrqoxnchyxvesy:5xv7M*U9w59#Q2@aws-0-ap-south-1.pooler.supabase.com:6543/postgres
+      - key: ALLOWED_ORIGINS
+        value: https://vedant-mittal.github.io,http://localhost:3000 
