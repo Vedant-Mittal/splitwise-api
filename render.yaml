@@ -2,10 +2,10 @@ services:
   - type: web
     name: splitwise-api
     env: node
-    buildCommand: npm install
+    buildCommand: npm install && npx prisma generate
     startCommand: npm start
     envVars:
       - key: DATABASE_URL
-        value: postgresql://postgres:5xv7M%2AU9w59%23Q2@db.fjoeswwrqoxnchyxvesy.supabase.co:5432/postgres
+        value: postgresql://postgres:5xv7M%252AU9w59%2523Q2@db.fjoeswwrqoxnchyxvesy.supabase.co:5432/postgres
       - key: ALLOWED_ORIGINS
         value: https://vedant-mittal.github.io,http://localhost:3000 
