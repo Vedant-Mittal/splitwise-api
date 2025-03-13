@@ -6,6 +6,6 @@ services:
     startCommand: npm start
     envVars:
       - key: DATABASE_URL
-        value: postgresql://postgres:5xv7M%252AU9w59%2523Q2@aws-0-ap-south-1.pooler.supabase.co:6543/postgres
+        sync: false
       - key: ALLOWED_ORIGINS
         value: https://vedant-mittal.github.io,http://localhost:3000 
